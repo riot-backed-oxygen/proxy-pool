@@ -90,7 +90,7 @@ PROGRESS_EVERY = 200            # 每校验多少个节点打印一次进度
 # 对 http/https 目标都可用。注意这会筛掉只支持明文转发的代理，
 # 有效数量会比 http 校验少不少；若更看重数量可改回 http://。
 CHECK_URLS = [
-    "https://www.gstatic.com/generate_204",
+    "https://www.google.com/generate_204",
     "https://cp.cloudflare.com/generate_204",
     "https://httpbin.org/ip",
 ]
