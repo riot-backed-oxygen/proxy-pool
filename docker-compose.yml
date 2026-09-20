@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  proxy-pool:
+    build: .
+    container_name: proxy-pool
+    ports:
+      - "8000:8000"
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./app.py:/app/app.py
+      - ./requirements.txt:/app/requirements.txt
